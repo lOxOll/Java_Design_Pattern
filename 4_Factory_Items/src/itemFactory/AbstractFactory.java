@@ -1,10 +1,10 @@
 package itemFactory;
 
 public abstract class AbstractFactory {
-	protected abstract Item createItem(String itemName);
+	protected abstract Item createItem(int num);
 
-	public final Item create(String itemName) {
-		Item item = createItem(itemName);
+	public final Item create(int num) {
+		Item item = createItem(num);
 		return item;
 	}
 }

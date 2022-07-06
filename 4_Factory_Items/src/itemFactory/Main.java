@@ -5,17 +5,11 @@ public class Main {
 	public static void main(String[] args) {
 		int money = 1000;
 		AbstractFactory factory = new ItemFactory();
-		Item potion = factory.create("potion");
-		Item ether = factory.create("ether");
-
-		money = potion.buy(3, money);
-		money = ether.buy(2, money);
+		Item potion = factory.create(10);
 		
-		potion.use();
-		potion.use();
-		ether.use();
-		ether.use();
-		ether.use();
+		potion.effect();
+
+		potion.sell(3);
 		
 	}
 
